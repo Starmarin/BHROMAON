@@ -2,30 +2,33 @@
     background: url(../img/bg/spain1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;  
+    background-position: bottom;
+    padding-left: 5%;  
     padding-bottom: 10rem;
-    padding-top: 23rem;
+    padding-top: 26rem;
     @include flex(row, flex-start, center);   
 }
 .offer-two{
     background: url(../img/bg/spain2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;  
+    background-position: bottom;
+    padding-right: 6%;   
     padding-bottom: 10rem;
-    padding-top: 23rem;
+    padding-top: 24rem;
     @include flex(row, flex-end, center); 
     .container{
         @include flex(row, flex-end, center);
     }  
 }
 .offer-box{
-    max-width: 45%;   
+    max-width: 40%;   
     background-color: rgba(23, 23, 23, 0.9); 
     @include flex(column, space-around, flex-start);
-    padding:5rem 3rem;    
+    padding:5rem 3rem;  
+    padding-bottom: 3rem;  
     .offer__text{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .offer__btn{
         padding:3%;

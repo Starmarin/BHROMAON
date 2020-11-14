@@ -2,7 +2,7 @@ body{
     background-color: $bg-color;
 }
 .container{
-    width: 1110px;
+    width: 83%;
     margin: 0 auto;
 }
 .link{
@@ -42,7 +42,8 @@ body{
     font-family: $Josefin;
     color: $main-color;
     text-transform: uppercase;
-    font-weight: 700;    
+    font-weight: 700; 
+    letter-spacing: 0.2rem;   
 }
 .subtitle{
     font-family: $Josefin;

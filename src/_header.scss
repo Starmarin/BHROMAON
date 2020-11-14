@@ -6,29 +6,29 @@
 }
 .header__info{
     @include flex;
-    padding-top:26.5rem;
+    padding-top:21%;
     .header-title{
         font-size: $header-title_size;
         font-family: $Josefin;
         color: $main-color;
         text-transform: uppercase;
-        margin-bottom: 1.2rem;
+        margin-bottom: 0.4%;
         font-weight: 700;
-        letter-spacing: 0.1em;        
+        letter-spacing: 0.3rem;        
     }
     .header-text{
         font-size: $header-sub_size;
         font-family: $Josefin;
         color: $main-color;
-        letter-spacing: 0.25em;
+        letter-spacing: 0.23em;
     }
 }
 .header-form{
-    width: 650px/1110px *100%;
+    width: 580px/1110px *100%;
     @include flex(row, center, center);
     background-color: $main-color; 
     height: 6rem;  
-    margin-top: 4rem;
+    margin-top: 4%;
     animation: grow 2s ease 1;      
     &__input{
         width: 500px/650px*100%;
@@ -91,12 +91,13 @@
 .menu{
     width: 100%;
     background-color: $firm-color;
-    margin-top: 15rem;
-    min-height: 10rem;
+    margin-top: 11.5%;
+    min-height: 8rem;
     @include flex(row, center, center);
     position: relative; 
     .container{
-        @include flex(row, space-between, center);        
+        @include flex(row, space-between, center);
+        width: 83%;        
         .menu__nav{
             display: block;
             font-size:$small_size;
@@ -110,7 +111,7 @@
     display: none;
 } 
 .nav__item{
-    margin-right: 3rem;
+    margin-right: 4.4rem;
     &:last-child{
         margin-right: 0;
     }
@@ -139,10 +140,10 @@
           transition: all 0.4s ease-in-out; 
         }
         &:before {
-          top: $hamburger__layer__height*4;
+          top: $hamburger__layer__height*2;
         }
         &:after {
-          bottom: $hamburger__layer__height*4;
+          bottom: $hamburger__layer__height*2;
         }  
            
 }

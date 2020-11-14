@@ -1,11 +1,11 @@
 .icons{
-    min-height: 33rem;
+    min-height: 29rem;
     display: flex;
     align-items: center;
 }
 .icons__list{
     justify-content: space-around;
-    position: relative;
+    position: relative;    
     &:before,
     &:after{
         content: '';

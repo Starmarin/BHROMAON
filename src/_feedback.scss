@@ -3,8 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding-top: 12rem;   
-    padding-bottom: 20rem;    
+    padding-top: 15rem;   
+    padding-bottom: 20rem;   
 }
 .feedback_title{
     text-align: center;
@@ -12,14 +12,21 @@
 }
 .feedback__box{
     @include flex(row, center, center);
-    width: 100%;
-    margin-top: 10rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9rem;
     background-color: $feedback-color;
-    .feedback__image{
-        width: 445px/1110px*100%;
+    .feedback__image{        
+        min-width: 40%;
+        object-fit: cover;
     }
     .feedback__info{
-        padding: 5rem;       
+        padding: 5rem;
+        letter-spacing: 0.2rem;
+        .feedback__subtitle{
+            margin-bottom: 7%;
+        }       
     }
 }
 .fa-quote-left{

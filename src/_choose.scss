@@ -3,34 +3,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding-top: 12rem;
+    padding-top: 9%;
     padding-bottom: 14rem;
     .container{
         @include flex(row, space-between, center);
     }
 }
 .choose__info{
-    max-width: 540px/1110px*100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    max-width: 500px/1110px*100%;    
     .choose__title{
         margin-bottom: 6rem;
     }
     .choose__text{
-        margin-bottom: 4rem;
+        margin-bottom: 5%;
+        letter-spacing: 0.1rem;
     }
     .choose__btn{
         display: inline-block;
-        padding: 3%;
-        min-width: 40%;
+        padding: 2.5%;
+        min-width: 35%;
         letter-spacing: 0.075em;
+        margin-top: 5%;
      }
 }
 .choose__images{
+    padding-right: 2rem;
     max-width: 32%;  
 }
 .choose__img{
     max-width: 100%;
     &:first-child{
-        margin-left:-34%;
+        margin-left:-35%;
         margin-bottom: 0.5rem;
         &:hover {
             animation: hithere 1s ease 1;

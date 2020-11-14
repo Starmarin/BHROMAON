@@ -81,6 +81,8 @@
     }           
 }
 @media screen and (max-width: 565px){
+    .logo{
+        font-size: 12px;}
     .offer-box{
         max-width: 90%;}
     .icons__list{
@@ -108,10 +110,10 @@
     }  
     .hamburger{
         &:before {
-            top: $hamburger__layer__height*2;
+            top: $hamburger__layer__height;
         }
         &:after {
-            bottom: $hamburger__layer__height*2;
+            bottom: $hamburger__layer__height;
         }
     }
 }
