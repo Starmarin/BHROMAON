@@ -1,0 +1,55 @@
+body{
+    background-color: $bg-color;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.list{
+    display: flex;
+}
+.title{
+    font-size: $title-size;
+    font-family: $Aleo;
+    color: $main-color;
+}
+.text{
+    font-family: $Josefin;
+    font-size: $text-size;
+    color: $text;
+    line-height: 26px/16px*100%;
+}
+.btn{
+    @include button;
+    &:hover{
+        background-color: $main-color;
+        border: 2px solid $firm-color;
+        color: $firm-color;        
+    }
+    &:hover>.icon-search{
+        fill: $firm-color;
+    }
+    &:focus{
+        background-color: #b1b9fc;
+    }
+}
+.logo{
+    font-size: $logo_size;
+    font-family: $Josefin;
+    color: $main-color;
+    text-transform: uppercase;
+    font-weight: 700;    
+}
+.subtitle{
+    font-family: $Josefin;
+    font-size: $sub_size;
+    color: $text;
+    margin-bottom: 3rem;
+    &--uppercase{
+        text-transform: uppercase;
+    }
+}

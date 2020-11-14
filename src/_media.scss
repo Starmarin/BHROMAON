@@ -1,0 +1,90 @@
+@media screen and (max-width: 1440px){
+    .container{
+        width: 1110px/1200px*100%;
+    }
+}
+@media screen and (max-width: 1110px) {
+    .header__info{        
+        padding-top:13rem;
+    }
+    .choose__images{
+        max-width: 50%;
+        .choose__img:first-child{
+            margin-left: 0px;                
+        }   
+    }
+    .choose__info{
+        max-width: 50%;} 
+    .icons__list{        
+        &:before,
+        &:after{
+            display: none;
+        }   
+    }              
+}
+@media screen and (max-width: 886px) {
+    html{
+        font-size: 8px;
+    }
+    .header__info{        
+        padding-top:20rem;
+    }
+    .header-form>button>.icon-search{
+        transform: translate(0.2rem, 0.5rem);
+    }  
+    .header-form{
+        width: 90%; }
+    .icons__title{
+        font-size: 2rem;
+    }
+    .menu__nav{
+        display: none;        
+        .nav__list{
+            flex-direction: column;
+            text-align: right;            
+            .nav__item{
+                font-size: $logo-size;
+                margin-top: 2rem;
+                margin-right: 6rem;
+
+            }
+        }        
+    }
+    .hamburger{
+        display: block;
+    } 
+    .mobile-menu{ 
+        display: flex;        
+        justify-content: flex-end;
+        width: 100%;        
+    }
+            
+       
+}
+@media screen and (max-width: 565px){
+    .offer-box{
+        max-width: 90%;}
+    .icons__list{
+        flex-direction: column;
+    }
+    .icons__item{
+        margin-top: 2rem;
+    }
+    .feedback__box{
+        @include flex(column, center, center);
+    }       
+}
+@media screen and (max-width: 320px){
+    html{
+        font-size: 6px;
+    }
+    .header__info{        
+        padding-top:35rem;
+    }
+    .choose__images{
+        display: none;              
+        } 
+    .choose__info{
+        max-width: 90%;}
+
+}

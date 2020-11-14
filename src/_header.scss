@@ -1,0 +1,164 @@
+.header{
+    background: url(../img/bg/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;    
+}
+.header__info{
+    @include flex;
+    padding-top:26.5rem;
+    .header-title{
+        font-size: $header-title_size;
+        font-family: $Josefin;
+        color: $main-color;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;        
+    }
+    .header-text{
+        font-size: $header-sub_size;
+        font-family: $Josefin;
+        color: $main-color;
+        letter-spacing: 0.25em;
+    }
+}
+.header-form{
+    width: 650px/1110px *100%;
+    @include flex(row, center, center);
+    background-color: $main-color; 
+    height: 6rem;  
+    margin-top: 4rem;
+    animation: grow 2s ease 1;      
+    &__input{
+        width: 500px/650px*100%;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        outline: none;
+        color: $placeholder;
+        font-size: $small_size;
+        font-family: $Josefin;
+        text-transform: none;
+        &:focus{
+            border-left: 5px $firm-color solid;
+            height: 100%;           
+        }        
+        &::placeholder{
+            color: $placeholder;
+            font-size: $small_size;
+            font-family: $Josefin;
+            text-transform: none;
+        }        
+    }    
+    button{
+        margin-right: 3px;
+        font-size:$small_size;
+        height: 90%;
+        width: 150px/650px*100%;
+        .icon-search{
+            fill: $main-color;
+            width: 2rem;
+            height: 2rem;
+            transform: translate(1.5rem, 0.5rem);
+        }
+    }
+}
+.header-scroll{
+    font-size:$small_size;
+    color: $main-color;
+    font-family: $Josefin;
+    letter-spacing: 0.2em;
+    position: relative;
+    margin-top: 12rem;
+    &:hover {
+        transform: scale(1.1 1.1);
+        animation: mi 1s ease infinite;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-bottom: 1px solid $main-color;
+        border-left: 1px solid $main-color;
+        transform: rotate(-45deg);
+        bottom: -1.5rem;
+        left: 45%;
+    }
+
+}
+.menu{
+    width: 100%;
+    background-color: $firm-color;
+    margin-top: 15rem;
+    min-height: 10rem;
+    @include flex(row, center, center);
+    position: relative; 
+    .container{
+        @include flex(row, space-between, center);        
+        .menu__nav{
+            display: block;
+            font-size:$small_size;
+            color: $main-color;
+            font-family: $Josefin;
+            text-transform: uppercase;                               
+        }
+    }        
+}
+#Ham{
+    display: none;
+} 
+.nav__item{
+    margin-right: 3rem;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        text-decoration: underline;         
+    }       
+}
+.hamburger{
+        display: none;  
+        top: $hamburger__layer__height*8;        
+        width: $hamburger__width;
+        height: $hamburger__layer__height;        
+        background: $main-color;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        &:before, 
+        &:after { 
+          display: block; 
+          position: absolute; 
+          content: "";
+          z-index:2;
+          width: $hamburger__width; 
+          height: $hamburger__layer__height; 
+          background: $main-color;
+          -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; 
+        }
+        &:before {
+          top: $hamburger__layer__height*4;
+        }
+        &:after {
+          bottom: $hamburger__layer__height*4;
+        }       
+    input:checked+label+.menu__nav{
+        display: block;
+    }
+    input:checked+label{
+        background: none;    
+        &:before, 
+        &:after {
+          top: $hamburger__layer__height*3;
+          right: 2%; 
+        }
+        &:before {        
+          transform: rotate(-45deg);
+        }
+        &:after {          
+          transform: rotate(45deg);
+        }
+    }       
+}

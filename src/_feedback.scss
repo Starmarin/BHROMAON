@@ -1,0 +1,29 @@
+.feedback{
+    background: url(../img/bg/touristSay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top: 12rem;   
+    padding-bottom: 20rem;    
+}
+.feedback_title{
+    text-align: center;
+    
+}
+.feedback__box{
+    @include flex(row, center, center);
+    width: 100%;
+    margin-top: 10rem;
+    background-color: $feedback-color;
+    .feedback__image{
+        width: 445px/1110px*100%;
+    }
+    .feedback__info{
+        padding: 5rem;       
+    }
+}
+.fa-quote-left{
+    color: $firm-color;
+    font-size: $sub_size;
+    transform: translate(0, -1rem);
+}
