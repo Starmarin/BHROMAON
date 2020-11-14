@@ -101,7 +101,7 @@
             display: block;
             font-size:$small_size;
             color: $main-color;
-            font-family: $Josefin;
+            font-family: $Aleo;
             text-transform: uppercase;                               
         }
     }        
@@ -143,22 +143,6 @@
         }
         &:after {
           bottom: $hamburger__layer__height*4;
-        }       
-    input:checked+label+.menu__nav{
-        display: block;
-    }
-    input:checked+label{
-        background: none;    
-        &:before, 
-        &:after {
-          top: $hamburger__layer__height*3;
-          right: 2%; 
-        }
-        &:before {        
-          transform: rotate(-45deg);
-        }
-        &:after {          
-          transform: rotate(45deg);
-        }
-    }       
+        }  
+           
 }

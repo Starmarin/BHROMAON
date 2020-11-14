@@ -122,7 +122,7 @@ body {
 }
 
 .logo {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-family: "Josefin Sans", sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -259,7 +259,7 @@ body {
   display: block;
   font-size: 1.4rem;
   color: #fff;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Aleo", serif;
   text-transform: uppercase;
 }
 
@@ -300,22 +300,6 @@ body {
 }
 .hamburger:after {
   bottom: 24px;
-}
-.hamburger input:checked + label + .menu__nav {
-  display: block;
-}
-.hamburger input:checked + label {
-  background: none;
-}
-.hamburger input:checked + label:before, .hamburger input:checked + label:after {
-  top: 18px;
-  right: 2%;
-}
-.hamburger input:checked + label:before {
-  transform: rotate(-45deg);
-}
-.hamburger input:checked + label:after {
-  transform: rotate(45deg);
 }
 
 .choose {
@@ -591,15 +575,23 @@ body {
     font-size: 2rem;
   }
 
-  .menu__nav {
+  .choose__images {
     display: none;
   }
-  .menu__nav .nav__list {
+
+  .choose__info {
+    max-width: 90%;
+  }
+
+  #menu__nav {
+    display: none;
+  }
+  #menu__nav .nav__list {
     flex-direction: column;
     text-align: right;
   }
-  .menu__nav .nav__list .nav__item {
-    font-size: 2.4rem;
+  #menu__nav .nav__list .nav__item {
+    font-size: 1.6rem;
     margin-top: 2rem;
     margin-right: 6rem;
   }
@@ -612,6 +604,24 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+  }
+
+  input:checked + label + #menu__nav {
+    display: block;
+  }
+
+  input:checked + label {
+    background: none;
+  }
+  input:checked + label:before, input:checked + label:after {
+    top: 18px;
+    right: 2%;
+  }
+  input:checked + label:before {
+    transform: rotate(-45deg);
+  }
+  input:checked + label:after {
+    transform: rotate(45deg);
   }
 }
 @media screen and (max-width: 565px) {
@@ -633,6 +643,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .footer-box {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 320px) {
   html {
@@ -643,11 +657,10 @@ body {
     padding-top: 35rem;
   }
 
-  .choose__images {
-    display: none;
+  .hamburger:before {
+    top: 12px;
   }
-
-  .choose__info {
-    max-width: 90%;
+  .hamburger:after {
+    bottom: 12px;
   }
 }
