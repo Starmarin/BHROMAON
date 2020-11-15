@@ -1,56 +1,68 @@
-body{
+body {
     background-color: $bg-color;
 }
-.container{
-    width: 83%;
+
+.container {
+    width: 1440px;
     margin: 0 auto;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: inherit;
 }
-.list{
+
+.list {
     display: flex;
 }
-.title{
+
+.title {
     font-size: $title-size;
     font-family: $Aleo;
     color: $main-color;
 }
-.text{
+
+.text {
     font-family: $Josefin;
     font-size: $text-size;
     color: $text;
     line-height: 26px/16px*100%;
 }
-.btn{
+
+.btn {
     @include button;
-    &:hover{
+
+    &:hover {
         background-color: $main-color;
         border: 2px solid $firm-color;
-        color: $firm-color;        
+        color: $firm-color;
     }
-    &:hover>.icon-search{
+
+    &:hover>.icon-search {
         fill: $firm-color;
     }
-    &:focus{
+
+    &:focus {
         background-color: #b1b9fc;
     }
 }
-.logo{
+
+.logo {
     font-size: $logo_size;
     font-family: $Josefin;
     color: $main-color;
     text-transform: uppercase;
-    font-weight: 700; 
-    letter-spacing: 0.2rem;   
+    font-weight: 700;
+    letter-spacing: 0.2rem;
 }
-.subtitle{
+
+.subtitle {
     font-family: $Josefin;
     font-size: $sub_size;
     color: $text;
     margin-bottom: 3rem;
-    &--uppercase{
+
+    &--uppercase {
         text-transform: uppercase;
     }
 }

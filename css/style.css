@@ -71,7 +71,7 @@ body {
 }
 
 .container {
-  width: 83%;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -255,7 +255,6 @@ body {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  width: 83%;
 }
 .menu .container .menu__nav {
   display: block;
@@ -578,7 +577,7 @@ body {
   }
 
   .header__info {
-    padding-top: 20rem;
+    min-height: 100vh;
   }
 
   .header-form > button > .icon-search {
@@ -677,10 +676,6 @@ body {
 @media screen and (max-width: 320px) {
   html {
     font-size: 6px;
-  }
-
-  .header__info {
-    padding-top: 35rem;
   }
 
   .hamburger:before {

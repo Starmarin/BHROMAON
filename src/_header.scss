@@ -1,36 +1,41 @@
-.header{
+.header {
     background: url(../img/bg/main.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;    
+    background-position: top;
 }
-.header__info{
+
+.header__info {
     @include flex;
-    padding-top:21%;
-    .header-title{
+    padding-top: 21%;
+
+    .header-title {
         font-size: $header-title_size;
         font-family: $Josefin;
         color: $main-color;
         text-transform: uppercase;
         margin-bottom: 0.4%;
         font-weight: 700;
-        letter-spacing: 0.3rem;        
+        letter-spacing: 0.3rem;
     }
-    .header-text{
+
+    .header-text {
         font-size: $header-sub_size;
         font-family: $Josefin;
         color: $main-color;
         letter-spacing: 0.23em;
     }
 }
-.header-form{
+
+.header-form {
     width: 580px/1110px *100%;
     @include flex(row, center, center);
-    background-color: $main-color; 
-    height: 6rem;  
+    background-color: $main-color;
+    height: 6rem;
     margin-top: 4%;
-    animation: grow 2s ease 1;      
-    &__input{
+    animation: grow 2s ease 1;
+
+    &__input {
         width: 500px/650px*100%;
         background-color: transparent;
         text-align: center;
@@ -40,23 +45,27 @@
         font-size: $small_size;
         font-family: $Josefin;
         text-transform: none;
-        &:focus{
+
+        &:focus {
             border-left: 5px $firm-color solid;
-            height: 100%;           
-        }        
-        &::placeholder{
+            height: 100%;
+        }
+
+        &::placeholder {
             color: $placeholder;
             font-size: $small_size;
             font-family: $Josefin;
             text-transform: none;
-        }        
-    }    
-    button{
+        }
+    }
+
+    button {
         margin-right: 3px;
-        font-size:$small_size;
+        font-size: $small_size;
         height: 90%;
         width: 150px/650px*100%;
-        .icon-search{
+
+        .icon-search {
             fill: $main-color;
             width: 2rem;
             height: 2rem;
@@ -64,18 +73,21 @@
         }
     }
 }
-.header-scroll{
-    font-size:$small_size;
+
+.header-scroll {
+    font-size: $small_size;
     color: $main-color;
     font-family: $Josefin;
     letter-spacing: 0.2em;
     position: relative;
     margin-top: 12rem;
+
     &:hover {
         transform: scale(1.1 1.1);
         animation: mi 1s ease infinite;
     }
-    &::after{
+
+    &::after {
         content: '';
         position: absolute;
         width: 11px;
@@ -88,62 +100,72 @@
     }
 
 }
-.menu{
+
+.menu {
     width: 100%;
     background-color: $firm-color;
     margin-top: 11.5%;
     min-height: 8rem;
     @include flex(row, center, center);
-    position: relative; 
-    .container{
+    position: relative;
+
+    .container {
         @include flex(row, space-between, center);
-        width: 83%;        
-        .menu__nav{
+
+        .menu__nav {
             display: block;
-            font-size:$small_size;
+            font-size: $small_size;
             color: $main-color;
             font-family: $Aleo;
-            text-transform: uppercase;                               
+            text-transform: uppercase;
         }
-    }        
+    }
 }
-#Ham{
+
+#Ham {
     display: none;
-} 
-.nav__item{
+}
+
+.nav__item {
     margin-right: 4.4rem;
-    &:last-child{
+
+    &:last-child {
         margin-right: 0;
     }
-    &:hover{
-        text-decoration: underline;         
-    }       
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
-.hamburger{
-        display: none;  
-        top: $hamburger__layer__height*8;        
+
+.hamburger {
+    display: none;
+    top: $hamburger__layer__height*8;
+    width: $hamburger__width;
+    height: $hamburger__layer__height;
+    background: $main-color;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    &:before,
+    &:after {
+        display: block;
+        position: absolute;
+        content: "";
+        z-index: 2;
         width: $hamburger__width;
-        height: $hamburger__layer__height;        
+        height: $hamburger__layer__height;
         background: $main-color;
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
-        &:before, 
-        &:after { 
-          display: block; 
-          position: absolute; 
-          content: "";
-          z-index:2;
-          width: $hamburger__width; 
-          height: $hamburger__layer__height; 
-          background: $main-color;
-          -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out; 
-        }
-        &:before {
-          top: $hamburger__layer__height*2;
-        }
-        &:after {
-          bottom: $hamburger__layer__height*2;
-        }  
-           
+    }
+
+    &:before {
+        top: $hamburger__layer__height*2;
+    }
+
+    &:after {
+        bottom: $hamburger__layer__height*2;
+    }
+
 }

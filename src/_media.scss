@@ -1,117 +1,154 @@
-@media screen and (max-width: 1440px){
-    .container{
+@media screen and (max-width: 1440px) {
+    .container {
         width: 1110px/1200px*100%;
     }
 }
+
 @media screen and (max-width: 1110px) {
-    .header__info{        
-        padding-top:13rem;
+    .header__info {
+        padding-top: 13rem;
     }
-    .choose__images{
+
+    .choose__images {
         max-width: 50%;
-        .choose__img:first-child{
-            margin-left: 0px;                
-        }   
+
+        .choose__img:first-child {
+            margin-left: 0px;
+        }
     }
-    .choose__info{
-        max-width: 50%;} 
-    .icons__list{        
+
+    .choose__info {
+        max-width: 50%;
+    }
+
+    .icons__list {
+
         &:before,
-        &:after{
+        &:after {
             display: none;
-        }   
-    }              
+        }
+    }
 }
+
 @media screen and (max-width: 886px) {
-    html{
+    html {
         font-size: 8px;
     }
-    .header__info{        
-        padding-top:20rem;
+
+    .header__info {
+        min-height: 100vh;
     }
-    .header-form>button>.icon-search{
+
+    .header-form>button>.icon-search {
         transform: translate(0.2rem, 0.5rem);
-    }  
-    .header-form{
-        width: 90%; }
-    .icons__title{
+    }
+
+    .header-form {
+        width: 90%;
+    }
+
+    .icons__title {
         font-size: 2rem;
     }
-    .choose__images{
-        display: none;              
-        } 
-    .choose__info{
-        max-width: 90%;}
-    #menu__nav{
-        display: none;        
-        .nav__list{
+
+    .choose__images {
+        display: none;
+    }
+
+    .choose__info {
+        max-width: 90%;
+    }
+
+    #menu__nav {
+        display: none;
+
+        .nav__list {
             flex-direction: column;
-            text-align: right;            
-            .nav__item{
+            text-align: right;
+
+            .nav__item {
                 font-size: $text_size;
                 margin-top: 2rem;
                 margin-right: 6rem;
             }
-        }        
-    }    
-    .hamburger{
+        }
+    }
+
+    .hamburger {
         display: block;
-    } 
-    .mobile-menu{ 
-        display: flex;        
+    }
+
+    .mobile-menu {
+        display: flex;
         justify-content: flex-end;
-        width: 100%;        
+        width: 100%;
     }
-    input:checked+label+#menu__nav{
+
+    input:checked+label+#menu__nav {
         display: block;
     }
-    input:checked+label{
-        background: none;    
-        &:before, 
+
+    input:checked+label {
+        background: none;
+
+        &:before,
         &:after {
-          top: $hamburger__layer__height*3;
-          right: 2%; 
+            top: $hamburger__layer__height*3;
+            right: 2%;
         }
-        &:before {        
-          transform: rotate(-45deg);
+
+        &:before {
+            transform: rotate(-45deg);
         }
-        &:after {          
-          transform: rotate(45deg);
+
+        &:after {
+            transform: rotate(45deg);
         }
-    }           
+    }
 }
-@media screen and (max-width: 565px){
-    .logo{
-        font-size: 12px;}
-    .offer-box{
-        max-width: 90%;}
-    .icons__list{
+
+@media screen and (max-width: 565px) {
+    .logo {
+        font-size: 12px;
+    }
+
+    .offer-box {
+        max-width: 90%;
+    }
+
+    .icons__list {
         flex-direction: column;
     }
-    .icons__item{
+
+    .icons__item {
         margin-top: 2rem;
     }
-    .feedback__box{
+
+    .feedback__box {
         @include flex(column, center, center);
-    } 
-    .footer-box{
-        max-width: 80%;  }
-    .feedback__box{
-        .feedback__image{
-        width: 80%;
-    }}    
+    }
+
+    .footer-box {
+        max-width: 80%;
+    }
+
+    .feedback__box {
+        .feedback__image {
+            width: 80%;
+        }
+    }
 }
-@media screen and (max-width: 320px){
-    html{
+
+@media screen and (max-width: 320px) {
+    html {
         font-size: 6px;
     }
-    .header__info{        
-        padding-top:35rem;
-    }  
-    .hamburger{
+
+    .hamburger {
         &:before {
             top: $hamburger__layer__height;
         }
+
         &:after {
             bottom: $hamburger__layer__height;
         }
